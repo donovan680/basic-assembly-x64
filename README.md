@@ -1,2 +1,8 @@
 # basic-assembly-x64
 x64 is a generic name for the 64-bit extensions to Intel's and AMD's 32-bit x86 instruction set architecture (ISA). AMD introduced the first version of x64, initially called x86-64 and later renamed AMD64.
+
+For years, PC programmers used x86 assembly to write performance-critical code. However, 32-bit PCs are being replaced with 64-bit ones, and the underlying assembly code has changed. This white paper is an introduction to x64 assembly. No prior knowledge of x86 code is needed, although it makes the transition easier.
+
+Intel named their implementation IA-32e and then EMT64. There are some slight incompatibilities between the two versions, but most code works fine on both versions; details can be found in the Intel® 64 and IA-32 Architectures Software Developer's Manuals and the AMD64 Architecture Tech Docs. We call this intersection flavor x64. Neither is to be confused with the 64-bit Intel® Itanium® architecture, which is called IA-64.
+
+Assembly is often used for performance-critical parts of a program, although it is difficult to outperform a good C++ compiler for most programmers. Assembly knowledge is useful for debugging code - sometimes a compiler makes incorrect assembly code and stepping through the code in a debugger helps locate the cause. Code optimizers sometimes make mistakes. Another use for assembly is interfacing with or fixing code for which you have no source code. Disassembly lets you change/fix existing executables. Assembly is necessary if you want to know how your language of choice works under the hood - why some things are slow and others are fast. Finally, assembly code knowledge is indispensable when diagnosing malware.
